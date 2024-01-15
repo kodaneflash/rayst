@@ -1,0 +1,28 @@
+{
+   "action": {
+      "default_icon": "icon-34.png"
+   },
+   "background": {
+      "service_worker": "src/pages/background/index.js"
+   },
+   "content_scripts": [ {
+      "css": [ "assets/css/Index.chunk.css" ],
+      "js": [ "src/pages/content/index.js" ],
+      "matches": [ "http://*/*", "https://*/*", "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApCpX3aPb7g3hI6bJ4Cj5DxcUCs9KTGS32b1OD8DoiqIspoqF7vRMyvfrZRnycdBFHoEbXsjdiYq46f14uDtzAD5YG8wFNQQFx+H4DVvW+bM8z41r/tYrUKQK/wobS7PR1tEZesnHX2OM/bzgst1gGSCaUk0+K/xfTyfre/WXrmZduEeV+i2fiYfjqEOYB5EfPV7LrCjOyZ0/foNF1o2uClyVaI08g7RK8lquwB7Nq/XlqNBdc72RvDOPVcwQs/j6Q8lToKoCoNzQTH/d9iIR0q3jgka2SsJz1T1tJezqAUK9rUi6YRpvUtBJizCLhjhVkbAscUnwMXmP7xYb1bIrNwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.10",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "assets/js/*.js", "assets/css/*.css", "assets/svg/*.svg", "assets/png/*.png", "icon-128.png", "icon-34.png" ]
+   } ]
+}
